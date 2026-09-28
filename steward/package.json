@@ -1,0 +1,24 @@
+{
+  "name": "steward",
+  "version": "0.1.0",
+  "description": "Self-hosted AI wealth advisor: net worth, tax and estate planning grounded in your own data",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.js",
+    "seed": "node --disable-warning=ExperimentalWarning scripts/seed-demo.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.129.0",
+    "chart.js": "^4.5.1",
+    "dompurify": "^3.4.16",
+    "express": "^5.2.1",
+    "marked": "^18.0.14",
+    "plaid": "^47.0.0"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  }
+}

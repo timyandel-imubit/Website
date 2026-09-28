@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Steward</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/vendor/chart.js"></script>
+  <script src="/vendor/marked.js"></script>
+  <script src="/vendor/purify.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="logo">◆</span> Steward</div>
+    <nav>
+      <a href="#overview" data-view="overview">Overview</a>
+      <a href="#accounts" data-view="accounts">Accounts</a>
+      <a href="#tax" data-view="tax">Tax</a>
+      <a href="#estate" data-view="estate">Estate</a>
+      <a href="#advisor" data-view="advisor">Advisor</a>
+      <a href="#settings" data-view="settings">Profile &amp; data</a>
+    </nav>
+    <div class="sidebar-foot" id="status-line"></div>
+  </aside>
+  <main id="view"></main>
+  <dialog id="modal"><form method="dialog" id="modal-form"></form></dialog>
+  <div id="toast" role="status"></div>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
